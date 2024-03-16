@@ -1,10 +1,8 @@
-// #include "../header/NgayBan.h"
-// #include "../header/HoaDon.h"
-#include "NgayBan.cpp"
-#include "HoaDon.cpp"
-#include "ChiTietHD.cpp"
-#include "SanPham.cpp"
-#include "QLCongTy.cpp"
+#include "../header/NgayBan.h"
+#include "../header/HoaDon.h"
+#include "../header/ChiTietHD.h"
+#include "../header/SanPham.h"
+#include "../header/QLCongTy.h"
 using namespace std;
 int main()
 {
