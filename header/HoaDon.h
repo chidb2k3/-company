@@ -14,6 +14,7 @@ private:
 
 
 public:
+    HoaDon();
     HoaDon(string _soHD, NgayBan _ngayBan, string _maKH);
     string getSoHD();
     void setSoHD(string _sHD);
@@ -22,6 +23,7 @@ public:
     string getMaKH();
     void setMaKH(string _maKH);
     string xemHoaDon();
+    HoaDon themHoaDon();
 
 
    

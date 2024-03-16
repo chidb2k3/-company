@@ -10,6 +10,7 @@ private:
     int trongLuong;
     string qcDongGoi;
 public:
+    SanPham();
     SanPham(string _maSP, string _tenSP, int _trongLuong, string _qcDongGoi);
     string getMaSP();
     void setMaSP(string _maSP);
@@ -20,6 +21,7 @@ public:
     string getQCDongGoi();
     void setQCDongGoi(string _qcDongGoi);
     string xemSP();
+    SanPham themSP();
 };
 
 #endif

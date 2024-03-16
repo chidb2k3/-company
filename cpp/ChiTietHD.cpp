@@ -4,11 +4,14 @@
 #include <vector>
 #include <sstream>
 using namespace std;
+ChiTietHD::ChiTietHD(){
+    
+}
 ChiTietHD::ChiTietHD(string _soHD, string _maSP, int _soLuong, int _giaBan){
     this->soHD = _soHD;
     this->maSP = _maSP;
     this->soLuong = _soLuong;
-    this->giaBan = giaBan;
+    this->giaBan = _giaBan;
 }
 string ChiTietHD::getSoHD(){
     return this->soHD;
@@ -36,7 +39,22 @@ void ChiTietHD::setGiaBan(int _giaBan){
 }
 string ChiTietHD::xemChiTietHD(){
     stringstream ss;
-    ss << soHD << " | " << maSP << " | " << soLuong << " | " << giaBan;
+    ss << soHD << "|" << maSP << "|" << soLuong << "|" << giaBan;
     return ss.str();
+}
+ChiTietHD ChiTietHD::themChiTietHD(){
+    string _soHD;
+    string _maSP;
+    int _soLuong;
+    int _giaBan;
+    cout << "\nNhap thong tin chi tiet hoa don: \n";
+    cout << "Nhap SoHD: ";cin.ignore(); getline(cin, _soHD);
+    cout << "Nhap MaSP: "; getline(cin, _maSP);
+    cout << "Nhap SoLuong: "; cin >> _soLuong;
+    cout << "Nhap Gia Ban: "; cin >> _giaBan;
+    return ChiTietHD(_soHD, _maSP, _soLuong, _giaBan);
+    
+
+
 }
     

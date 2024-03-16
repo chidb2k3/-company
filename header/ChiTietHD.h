@@ -12,6 +12,7 @@ private:
 
     
 public:
+    ChiTietHD();
     ChiTietHD(string _soHD, string _maSP, int _soLuong, int _giaBan);
     string getSoHD();
     void setSoHD(string _soHD);
@@ -22,6 +23,7 @@ public:
     int getGiaBan();
     void setGiaBan(int _giaBan);
     string xemChiTietHD();
+    ChiTietHD themChiTietHD();
     
     
 
